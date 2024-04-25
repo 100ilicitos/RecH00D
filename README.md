@@ -16,7 +16,10 @@ $ sudo cp target/release/findomain /usr/bin/
 $ findomain
 
 > sudo apt install assetfinder
+
 > sudo apt install amass
+
 > sudo apt install subfinder
+
 
 Good Luck!
