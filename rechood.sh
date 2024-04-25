@@ -12,6 +12,7 @@ if [ $# -eq 0 ]
     echo ""
 else
     echo "## RECH00D.SH STARTING ##"
+    echo "You can go for lunch or dinner, it will take a while! :P"
     assetfinder -subs-only $DOMAIN  > domains_asset
     amass enum -d $DOMAIN -passive  > domains_amass_passive
     amass enum -d $DOMAIN -active -brute -w /usr/share/seclists/Discovery/DNS/deepmagic.com-prefixes-top50000.txt  > domains_amass_active
@@ -25,4 +26,3 @@ else
     cat domainsTotal2  haktrails subdomains  > domains_hak2
     cat dominioTotal.txt domainsTotal2 domains_hak2  > webTotal
 fi
-
