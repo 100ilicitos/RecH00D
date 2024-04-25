@@ -10,10 +10,16 @@ Write results to automatically named TXT output file(s).
 You need to install on your Kali Linux:
 
 $ git clone https://github.com/findomain/findomain.git
+
 $ cd findomain
+
 $ cargo build --release
+
 $ sudo cp target/release/findomain /usr/bin/
+
 $ findomain
+
+-----------------------------------------------------------
 
 > sudo apt install assetfinder
 
