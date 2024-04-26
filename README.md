@@ -27,5 +27,9 @@ $ findomain
 
 > sudo apt install subfinder
 
+> sudo apt install golang-go
+
+> go install github.com/tomnomnom/waybackurls@latest 
+
 
 Good Luck!
