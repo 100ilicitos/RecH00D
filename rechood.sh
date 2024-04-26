@@ -15,6 +15,8 @@ else
     echo "> You can go for lunch or dinner, it will take a while! :P"
     assetfinder -subs-only $DOMAIN  > domains_asset
     echo "[+] assetfinder finish! Next..."
+    cat domains_asset | ~/go/bin/waybackurls  > urls.txt
+    echo "[+] waybackurls finish! Next..."
     amass enum -d $DOMAIN -passive  > domains_amass_passive
     echo "[+] amass recon finish! Next..."
     amass enum -d $DOMAIN -active -brute -w /usr/share/seclists/Discovery/DNS/deepmagic.com-prefixes-top50000.txt  > domains_amass_active
