@@ -29,6 +29,8 @@ $ findomain
 
 > sudo apt install golang-go
 
+> sudo apt install seclists 
+
 > go install github.com/tomnomnom/waybackurls@latest 
 
 
